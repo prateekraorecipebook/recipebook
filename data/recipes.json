@@ -1,0 +1,14 @@
+[
+  {
+    "id": "thai-red-curry", "title": "Thai Red Curry", "url": "recipes/thai-red-curry.html", "description": "A vivid, creamy coconut curry loaded with vegetables.", "cuisine": ["Thai", "Southeast Asian"], "course": ["Main"], "diet": ["Vegetarian", "Vegan"], "meal": ["Dinner", "Weeknight"], "timeMinutes": 35, "difficulty": "Easy", "servings": 4, "ingredients": ["coconut milk", "red curry paste", "tofu", "broccoli", "bell pepper", "green beans", "basil", "lime", "rice"], "tags": ["curry", "one-pot", "spicy", "gluten-free"], "accent": "#c94b36"
+  },
+  {
+    "id": "kerala-vegetable-stew", "title": "Kerala Vegetable Stew", "url": "recipes/kerala-vegetable-stew.html", "description": "Gentle, fragrant coconut stew with soft vegetables and warm whole spices.", "cuisine": ["Indian", "Kerala", "South Indian"], "course": ["Main", "Side"], "diet": ["Vegetarian", "Vegan", "Gluten-free"], "meal": ["Breakfast", "Dinner"], "timeMinutes": 45, "difficulty": "Easy", "servings": 4, "ingredients": ["coconut milk", "potato", "carrot", "green beans", "peas", "ginger", "green chilli", "curry leaves", "cinnamon"], "tags": ["stew", "mild", "one-pot", "comfort food"], "accent": "#5b8069"
+  },
+  {
+    "id": "rajma-sabzi", "title": "Rajma Sabzi", "url": "recipes/rajma-sabzi.html", "description": "Slow-simmered kidney beans in a richly spiced tomato-onion gravy.", "cuisine": ["Indian", "Punjabi", "North Indian"], "course": ["Main"], "diet": ["Vegetarian", "Vegan", "Gluten-free"], "meal": ["Lunch", "Dinner", "Meal prep"], "timeMinutes": 55, "difficulty": "Easy", "servings": 4, "ingredients": ["kidney beans", "onion", "tomato", "ginger", "garlic", "yogurt", "cumin", "rice"], "tags": ["beans", "curry", "protein-rich", "make-ahead"], "accent": "#8d4637"
+  },
+  {
+    "id": "sri-lankan-brinjal-moju", "title": "Sri-Lankan Style Brinjal Moju", "url": "recipes/sri-lankan-brinjal-moju.html", "description": "Tangy-sweet, spiced eggplant pickle with a satisfyingly glossy finish.", "cuisine": ["Sri Lankan", "South Asian"], "course": ["Condiment", "Side"], "diet": ["Vegetarian", "Vegan", "Gluten-free"], "meal": ["Lunch", "Dinner"], "timeMinutes": 50, "difficulty": "Medium", "servings": 6, "ingredients": ["eggplant", "onion", "green chilli", "mustard seeds", "vinegar", "sugar", "turmeric", "curry leaves"], "tags": ["pickle", "tangy", "make-ahead", "spicy"], "accent": "#6a4c93"
+  }
+]

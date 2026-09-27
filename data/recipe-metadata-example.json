@@ -1,0 +1,16 @@
+{
+  "id": "kebab-example",
+  "title": "Example Kebab",
+  "url": "recipes/example-kebab.html",
+  "description": "One inviting sentence for the recipe card.",
+  "cuisine": ["Indian", "North Indian"],
+  "course": ["Starter", "Main"],
+  "diet": ["Vegetarian", "Vegan", "Gluten-free"],
+  "meal": ["Lunch", "Dinner", "Weeknight"],
+  "timeMinutes": 35,
+  "difficulty": "Easy",
+  "servings": 4,
+  "ingredients": ["ingredient name", "another ingredient"],
+  "tags": ["quick", "spicy", "make-ahead"],
+  "accent": "#bb4a2f"
+}

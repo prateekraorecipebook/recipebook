@@ -1,0 +1,20 @@
+You are creating a single recipe page for my static GitHub Pages recipe book.
+
+First, return ONLY one valid JSON object matching the exact schema in `data/recipe-metadata-example.json`. Use a URL in the form `recipes/kebab-example.html`; id and filename must be lowercase kebab-case. Ingredient names must be simple, lowercase pantry-searchable names. Use arrays for every categorisation field. Do not invent nutritional facts.
+
+Then, after a line containing exactly `---HTML---`, return a complete, standalone HTML document for that recipe. It may use its own visual personality, but it MUST:
+
+- Link `../assets/recipe.css` and load `../assets/recipe.js` immediately before `</body>`.
+- Support the site-wide light/dark mode. Do not hard-code page backgrounds or body text colours: use CSS variables such as `var(--paper)`, `var(--ink)`, `var(--muted)`, `var(--line)`, and `var(--accent)`. Include this navigation near the start of `<body>` so the visitor can change theme: `<nav class="recipe-nav"><a href="../index.html">← Recipe book</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><span aria-hidden="true">◐</span> Theme</button><a href="#method">Jump to method ↓</a></nav>`. The chosen theme is saved automatically by `recipe.js`.
+- Have a `<main data-recipe data-servings="4">` wrapper, where 4 is the base yield.
+- Use `data-base-qty="NUMBER"` on EVERY numeric ingredient quantity, and put the visible number in a nested `<span data-base-qty="NUMBER">NUMBER</span>`. Never put these attributes on units. The same quantity should not appear as plain text elsewhere.
+- Include this exact yield control (change only base text):
+  `<div class="servings"><button type="button" data-serving-down aria-label="Decrease servings">−</button><span><strong data-serving-output>4</strong> servings</span><button type="button" data-serving-up aria-label="Increase servings">+</button></div>`
+- Use accessible semantic HTML: title, one h1, h2 section headings, `<ul>` ingredients, and an ordered method (or equivalent clearly numbered steps).
+- For any timed instruction, include exactly this timer markup in that step, with total seconds substituted:
+  `<div class="timer" data-timer="600"><span>10:00</span><button type="button">Start timer</button></div>`
+- Include preparation time, cooking time, total time, yield, difficulty, dietary tags, storage guidance, substitutions, and an approximate spice level. Clearly distinguish essential ingredients from optional garnish.
+- Do not use images that require downloading or external APIs. Do not add frameworks, analytics, scripts other than `recipe.js`, or remote dependencies other than the stylesheet's fonts.
+- Write practical, tested-feeling instructions with temperatures and visual cues. Ensure all ingredient quantities agree with the yield.
+
+At the end, add a short `CATALOGUE ENTRY` comment containing the exact JSON again. I will paste the first JSON into `data/recipes.json` and save the HTML into the stated filename.

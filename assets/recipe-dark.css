@@ -1,0 +1,4 @@
+/* Theme controls and overrides loaded by recipe.js for every recipe page. */
+:root[data-theme="dark"]{--ink:#f6eadb;--paper:#1d211f;--muted:#cbbfb0;--line:#51564d;--accent:#ff917c;--wash:#2c332e}
+body{transition:background .25s,color .25s}.recipe-nav{align-items:center;gap:13px}.theme-toggle{border:1px solid var(--line);background:transparent;color:var(--ink);padding:7px 9px;cursor:pointer;font:500 10px 'DM Mono',monospace;text-transform:uppercase}.theme-toggle span{color:var(--accent)}.servings button{color:var(--ink)}.ingredients li{border-color:var(--line)}
+@media(max-width:700px){.recipe-nav a:last-child{display:none}}

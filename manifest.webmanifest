@@ -1,0 +1,9 @@
+{
+  "name": "Prateek's Recipe Book",
+  "short_name": "Recipe Book",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf1",
+  "theme_color": "#bb4a2f",
+  "description": "A personal, offline-friendly collection of recipes."
+}

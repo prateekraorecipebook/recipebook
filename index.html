@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#bb4a2f"><link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css"><title>Prateek's Recipe Book</title>
+</head>
+<body class="home">
+  <header class="masthead"><a class="brand" href="./">PRATEEK'S <em>RECIPE BOOK</em></a><div class="header-tools"><p>Cook what sounds good.</p><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode"><span aria-hidden="true">◐</span> Theme</button></div></header>
+  <main>
+    <section class="intro"><p class="eyebrow">A personal collection</p><h1>What are we cooking?</h1><p>Browse a small, growing library of recipes—or begin with what is already in your kitchen.</p></section>
+    <section class="controls" aria-label="Recipe filters">
+      <label class="search"><span>Search recipes</span><input id="search" type="search" placeholder="Try ‘coconut’, ‘quick’, or ‘Thai’"></label>
+      <div id="filterGroups" class="filter-groups"></div>
+      <button id="clearFilters" class="quiet" type="button">Clear filters</button>
+    </section>
+    <section class="pantry" aria-labelledby="pantry-title">
+      <div><p class="eyebrow">Pantry match</p><h2 id="pantry-title">What do you have?</h2><p>Enter ingredients separated by commas. Recipes are ranked by how closely they match.</p></div>
+      <div class="pantry-input"><label for="pantryIngredients">Ingredients on hand</label><textarea id="pantryIngredients" rows="2" placeholder="coconut milk, potato, ginger, rice"></textarea><button id="findMatches" type="button">Find something to make</button></div>
+    </section>
+    <section aria-live="polite"><div class="results-head"><h2 id="resultsTitle">All recipes</h2><span id="count"></span></div><div id="recipeGrid" class="recipe-grid"></div></section>
+  </main>
+  <footer>Built to live offline · Add recipes with <code>RECIPE_PROMPT.txt</code></footer>
+  <script src="data/recipes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
